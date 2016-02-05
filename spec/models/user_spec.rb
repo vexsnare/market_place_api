@@ -11,3 +11,7 @@ describe User do
 
   it { should be_valid }
 end
+
+describe "when email is not present" do
+  it { should validate_presence_of(:email) }
+end
