@@ -52,6 +52,10 @@ group :test do
   gem "shoulda-matchers"
 end
 
+group :production do
+  gem 'pg', '0.17.1'
+end
+
 gem "devise"
 
 gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
