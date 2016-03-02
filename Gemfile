@@ -33,23 +33,29 @@ gem 'active_model_serializers'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'sqlite3'
+  gem "factory_girl_rails"
+  gem 'ffaker'
 
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
+  gem 'sqlite3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
 
 group :test do
-  gem "rspec-rails", "~> 2.14"
-  gem "factory_girl_rails"
-  gem 'ffaker'
+  gem 'minitest'
+  gem "rspec-rails"
   gem "shoulda-matchers"
 end
 
 gem "devise"
+
+gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
+gem 'compass-rails', '2.0.4'
+gem 'furatto'
+gem 'font-awesome-rails'
+gem 'simple_form'
