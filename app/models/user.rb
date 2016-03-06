@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   before_create :generate_authentication_token!
 
-  devise :database_authenticatable, :registerable,
+  devise :database_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable
   validates :auth_token, uniqueness: true
 

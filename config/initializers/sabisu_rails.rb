@@ -23,8 +23,7 @@ SabisuRails.setup do |config|
 
   # Resources on the api
   config.resources = [
-      :users => [:email, :password, :password_confirmation],
-      :products => [:title, :price, :published]
+      config.resources = [:users, :products]
   ]
 
   # Application name
