@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #Api gems
 gem 'active_model_serializers'
 
+gem 'rack-cors', :require => 'rack/cors'
+
+gem 'angular_rails_csrf'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
